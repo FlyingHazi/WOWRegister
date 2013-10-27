@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<script src="jquery-1.8.3.min.js"></script>
+<link rel="stylesheet" type="text/css" href="main.css" />
+<title>Registration Page</title>
+</head>
+<body>
+	<form action="#" id="registerForm" method="post">
+		<div class="box1">
+			<input type="text" id="user" />
+		</div>
+		<div class="box2">
+			<input type="password" id="pass" />
+		</div>
+		<div class="box3">
+			<input type="text" name="email" />
+		</div>
+		<div class="create">
+			<button>Create Account</button>
+		</div>
+		<div class="realmlist">Set Realmlist ur realmlist</div>
+	</form>
+	<script>
+		$("#registerForm").submit(function(event) {
+			event.preventDefault();
+			$.ajax({
+				url : "WOWRegister",
+				type : "post",
+				data : {
+					user : $("#user").val(),
+					pass : $("#pass").val()
+				}
+			}).done(function(re) {
+				alert(re);
+			});
+		});
+	</script>
+</body>
+</html>
+
+

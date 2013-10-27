@@ -1,0 +1,44 @@
+body {
+position:top;
+background-color:#000000;
+background-image:url(bg.jpg);
+background-repeat:no-repeat;
+margin-top:80px;
+}
+
+.box1 {
+margin-top:145px;
+margin-left:460px;
+}
+
+.box2 {
+margin-top:35px;
+margin-left:460px;
+}
+
+.box3 {
+margin-top:31px;
+margin-left:460px;
+}
+
+.create {
+margin-top:20px;
+margin-left:482px;
+}
+
+.realmlist {
+font-size:25px;
+color:#000000;
+padding-top:1px;
+padding-left:200px;
+}
+
+a  {
+text-decoration:none;
+color:white;
+}
+
+a:hover {
+text-decoration:none;
+color:red;
+}
